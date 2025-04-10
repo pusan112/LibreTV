@@ -1,4 +1,4 @@
-name: 'Build LibreTV image'
+name: 'Build 浦深TV image'
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: 'Build LibreTV image'
+    name: 'Build 浦深TV image'
     runs-on: ubuntu-latest
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: 'Build and push LibreTV image'
+      - name: 'Build and push 浦深TV image'
         uses: docker/build-push-action@v6.14.0
         with:
           context: .
