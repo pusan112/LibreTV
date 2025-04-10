@@ -1,6 +1,6 @@
 FROM nginx:alpine
-LABEL maintainer="LibreTV Team"
-LABEL description="LibreTV - 免费在线视频搜索与观看平台"
+LABEL maintainer="浦深TV Team"
+LABEL description="浦深TV - 免费在线视频搜索与观看平台"
 
 # 复制应用文件
 COPY . /usr/share/nginx/html
