@@ -1,13 +1,14 @@
 // 全局常量配置
-const PROXY_URL = 'https://proxy.mengze.vip/proxy/';
+
+const PROXY_URL = 'https://cors.zme.ink/';
 const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
 const MAX_HISTORY_ITEMS = 5;
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: 'LibreTV',
-    url: 'https://libretv.is-an.org',
+    name: '浦深TV',
+    url: 'https://tv.mylive.me',
     description: '免费在线视频搜索与观看平台',
     logo: 'https://images.icon-icons.com/38/PNG/512/retrotv_5520.png',
     version: '1.0.0'
@@ -44,6 +45,11 @@ const API_SITES = {
     cjhw: {
         api: 'https://cjhwba.com',
         name: '新华为',
+    },
+    jisu: {
+        api: 'https://jszyapi.com',
+        name: '极速资源',
+        detail: 'https://jszyapi.com'
     },
     dbzy: {
         api: 'https://dbzy.com',
@@ -94,7 +100,9 @@ const PLAYER_CONFIG = {
     height: '600',
     timeout: 15000,  // 播放器加载超时时间
     filterAds: true,  // 是否启用广告过滤
-    autoPlayNext: true  // 默认启用自动连播功能
+    autoPlayNext: true,  // 默认启用自动连播功能
+    adFilteringEnabled: true, // 默认开启分片广告过滤
+    adFilteringStorage: 'adFilteringEnabled' // 存储广告过滤设置的键名
 };
 
 // 增加错误信息本地化
